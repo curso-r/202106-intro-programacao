@@ -1,0 +1,108 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(magrittr)
+main_repo <- "main-intro-programacao"
+turma <- "202106-intro-programacao"
+```
+
+
+
+## Instalações necessárias (pré-curso)
+
+- Passo 1: Instale o R. [Siga o tutorial](https://livro.curso-r.com/1-1-instalacao-do-r.html).
+
+- Passo 2: Instale o RStudio. [Siga o tutorial](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html).
+
+## Configuração inicial
+
+Faremos essas etapas na primeira aula!
+
+#### Passo 1: Criar um projeto do RStudio
+
+Faça um projeto do RStudio para usar durante todo o curso e em seguida abra-o.
+
+#### Passo 2: Baixar o material
+
+Certifique que você está dentro do projeto criado no passo 1 e baixe [este arquivo](https://github.com/curso-r/main-intro-programacao/archive/master.zip) e descompacte dentro da pasta do projeto.
+
+
+## Slides
+
+```{r, echo = FALSE}
+knitr::kable(
+  tibble::tibble(
+    slide = CursoRutils:::list_github_files(main_repo, "slides/", "html"),
+    link = paste0("https://curso-r.github.io/", main_repo, "/", slide)
+  ) %>% 
+    dplyr::filter(!stringr::str_detect(slide, "_files/"))
+)
+```
+
+## Scripts usados em aula
+
+```{r, echo = FALSE}
+knitr::kable(
+  tibble::tibble(
+    script = list.files("exemplos_de_aula/", pattern = ".R"),
+    link = paste0("https://curso-r.github.io/", turma, "/exemplos_de_aula/", script)
+  )
+)
+```
+
+
+
+
+```{r, echo = FALSE}
+## Dados utilizados
+
+# Os dados são derivados da base `voos` disponível no pacote [dados](https://cienciadedatos.github.io/dados/).
+
+# knitr::kable(
+#   tibble::tibble(
+#     arquivo = list.files("dados"),
+#     link = paste0("https://curso-r.github.io/", turma, "/dados/", arquivo)
+#   )
+# )
+```
+
+
+
+## Materiais complementares
+
+
+```{r echo=FALSE, message=FALSE}
+googlesheets4::gs4_deauth()
+"1SmCKCvJBff3CVty-xYKJ4NhEo2j6sUwkdET46vQisDY" %>% 
+  googledrive::as_id() %>% 
+  googlesheets4::read_sheet(turma) %>%
+  dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
+  dplyr::select(-desc, -url) %>%
+  dplyr::arrange(aula) %>% 
+  knitr::kable(col.names = c("Aula", "Tema", "Descrição"))
+```
+
+
+
+## Redes sociais da Curso-R
+
+Instagram: https://www.instagram.com/cursoo_r/
+
+Twitter: https://twitter.com/curso_r
+
+Instagram: https://www.youtube.com/c/CursoR6/featured
+
+Linkedin: https://www.linkedin.com/company/curso-r/
+
+Facebook: https://www.facebook.com/cursodeR
+
+
