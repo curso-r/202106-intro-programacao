@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
 library(magrittr)
 main_repo <- "main-intro-programacao"
 turma <- "202106-intro-programacao"
+num_aula <- 1
 ```
 
 
@@ -33,7 +34,7 @@ Faça um projeto do RStudio para usar durante todo o curso e em seguida abra-o.
 
 #### Passo 2: Baixar o material
 
-Certifique que você está dentro do projeto criado no passo 1 e baixe [este arquivo](https://github.com/curso-r/main-intro-programacao/archive/master.zip) e descompacte dentro da pasta do projeto.
+Certifique que você está dentro do projeto criado no passo 1 e baixe [este arquivo](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip) e descompacte dentro da pasta do projeto.
 
 
 ## Slides
@@ -88,7 +89,9 @@ googlesheets4::gs4_deauth()
   dplyr::mutate(link = glue::glue("[{desc}]({url})")) %>%
   dplyr::select(-desc, -url) %>%
   dplyr::arrange(aula) %>% 
-  knitr::kable(col.names = c("Aula", "Tema", "Descrição"))
+  dplyr::filter(aula <= num_aula) %>% 
+  knitr::kable(col.names = c("Aula", "Tema", "Descrição")) 
+
 ```
 
 

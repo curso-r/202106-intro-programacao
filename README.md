@@ -22,7 +22,7 @@ abra-o.
 
 Certifique que você está dentro do projeto criado no passo 1 e baixe
 [este
-arquivo](https://github.com/curso-r/main-intro-programacao/archive/master.zip)
+arquivo](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip)
 e descompacte dentro da pasta do projeto.
 
 ## Slides
@@ -54,10 +54,6 @@ e descompacte dentro da pasta do projeto.
 |    1 | Introdução  | [Folha de cola - RStudio (em português)](https://github.com/rstudio/cheatsheets/raw/master/translations/portuguese/rstudio-IDE-cheatsheet-portuguese.pdf) |
 |    1 | Introdução  | [Texto sobre projetos no RStudio: Rproj e diretórios](https://curso-r.github.io/zen-do-r/rproj-dir.html)                                                  |
 |    1 | Introdução  | [Texto sobre o painel Environment no RStudio e o armazenamento de objetos: .RData e .Rhistory](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)    |
-|   NA | Introdução  | [Texto de introdução à estatística descritiva](https://escoladedados.org/tutoriais/analise-com-estatistica-descritiva-para-leigos/)                       |
-|   NA | Introdução  | [Livro Ciência de Dados em R - Capítulo 3 - R Base](https://livro.curso-r.com/3-r-base.html)                                                              |
-|   NA | Funções     | [Livro Ciência de Dados em R - Capítulo 4 - Pacotes](https://livro.curso-r.com/4-pacotes.html)                                                            |
-|   NA | Pipe        | [Livro Ciência de Dados em R - Capítulo 6 - Pipe](https://livro.curso-r.com/6-pipe.html)                                                                  |
 
 ## Redes sociais da Curso-R
 
