@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 library(magrittr)
 main_repo <- "main-intro-programacao"
 turma <- "202106-intro-programacao"
-num_aula <- 1
+num_aula <- 1 # atualizar
 ```
 
 
@@ -52,12 +52,20 @@ knitr::kable(
 ## Scripts usados em aula
 
 ```{r, echo = FALSE}
-knitr::kable(
-  tibble::tibble(
-    script = list.files("exemplos_de_aula/", pattern = ".R"),
-    link = paste0("https://curso-r.github.io/", turma, "/exemplos_de_aula/", script)
+
+
+tibble::tibble(
+  script = list.files("exemplos_de_aula/", pattern = ".R"),
+  link = paste0(
+    "https://curso-r.github.io/",
+    turma,
+    "/exemplos_de_aula/",
+    script
   )
-)
+) %>%
+  tibble::rowid_to_column("numero") %>%  dplyr::filter(numero <= 0) %>% # atualizar dplyr::select(-numero) %>%
+  knitr::kable()
+
 ```
 
 

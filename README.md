@@ -40,8 +40,8 @@ e descompacte dentro da pasta do projeto.
 
 ## Scripts usados em aula
 
-| script | link |
-|:-------|:-----|
+| numero | script | link |
+|-------:|:-------|:-----|
 
 ## Materiais complementares
 
@@ -50,10 +50,20 @@ e descompacte dentro da pasta do projeto.
 |    0 | Instalação  | [Instalação do R](https://livro.curso-r.com/1-1-instalacao-do-r.html)                                                                                     |
 |    0 | Instalação  | [Instalação do RStudio](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html)                                                                         |
 |    0 | Comunidades | [Redes sociais dos capítulos da R-Ladies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil/blob/master/README.md)                                     |
+|    1 | Curso-R     | [Materiais da Curso-R](https://curso-r.com/material/)                                                                                                     |
+|    1 | Curso-R     | [Trabalhos finais do curso passado](https://curso-r.github.io/202102-intro-programacao/)                                                                  |
+|    1 | Introdução  | [Post sobre erros](https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/)                                                                          |
+|    1 | Introdução  | [Exemplo de Dashboard](https://coronavirus.jhu.edu/map.html)                                                                                              |
+|    1 | Introdução  | [R Foundation](https://www.r-project.org/foundation/)                                                                                                     |
+|    1 | Introdução  | [Live sobre o projeto base dos dados](https://www.youtube.com/watch?v=8D4jK-YCxLU&t=3733s)                                                                |
+|    1 | Introdução  | [Base dos dados - exemplo](https://basedosdados.org/dataset/br-ana-atlas-esgotos/resource/3bcdcfe4-57e5-4860-b522-5f3f3f1cfcda)                           |
 |    1 | Introdução  | [Folha de cola - R básico - Em inglês](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)                                                       |
+|    1 | Introdução  | [Fórum de dúvidas/Comunidade/Discourse](https://discourse.curso-r.com/)                                                                                   |
+|    1 | Dúvidas     | [renv](https://rstudio.github.io/renv/articles/renv.html)                                                                                                 |
 |    1 | Introdução  | [Folha de cola - RStudio (em português)](https://github.com/rstudio/cheatsheets/raw/master/translations/portuguese/rstudio-IDE-cheatsheet-portuguese.pdf) |
 |    1 | Introdução  | [Texto sobre projetos no RStudio: Rproj e diretórios](https://curso-r.github.io/zen-do-r/rproj-dir.html)                                                  |
 |    1 | Introdução  | [Texto sobre o painel Environment no RStudio e o armazenamento de objetos: .RData e .Rhistory](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)    |
+|    1 | Introdução  | [Folhas de cola da RStudio](https://www.rstudio.com/resources/cheatsheets/)                                                                               |
 
 ## Redes sociais da Curso-R
 
