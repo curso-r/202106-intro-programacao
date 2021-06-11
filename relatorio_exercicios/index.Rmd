@@ -92,7 +92,6 @@ colar_questoes <- function(id){
   knitr::kable(col.names = c(
      "Opção de resposta", "N. de escolhas"
   )) %>% 
-  kableExtra::kable_styling(full_width = T) %>%
     print()
 }
 
