@@ -40,8 +40,9 @@ e descompacte dentro da pasta do projeto.
 
 ## Scripts usados em aula
 
-| numero | script | link |
-|-------:|:-------|:-----|
+| numero | script          | link                                                                                  |
+|-------:|:----------------|:--------------------------------------------------------------------------------------|
+|      1 | 01-introducao.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/01-introducao.R> |
 
 ## Materiais complementares
 
@@ -63,7 +64,13 @@ e descompacte dentro da pasta do projeto.
 |    1 | Introdução  | [Folha de cola - RStudio (em português)](https://github.com/rstudio/cheatsheets/raw/master/translations/portuguese/rstudio-IDE-cheatsheet-portuguese.pdf) |
 |    1 | Introdução  | [Texto sobre projetos no RStudio: Rproj e diretórios](https://curso-r.github.io/zen-do-r/rproj-dir.html)                                                  |
 |    1 | Introdução  | [Texto sobre o painel Environment no RStudio e o armazenamento de objetos: .RData e .Rhistory](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)    |
+|    1 | Introdução  | [Texto de introdução à estatística descritiva](https://escoladedados.org/tutoriais/analise-com-estatistica-descritiva-para-leigos/)                       |
 |    1 | Introdução  | [Folhas de cola da RStudio](https://www.rstudio.com/resources/cheatsheets/)                                                                               |
+|    2 | Introdução  | [Livro Ciência de Dados em R - Capítulo 3 - R Base](https://livro.curso-r.com/3-r-base.html)                                                              |
+|    2 | Funções     | [Livro Ciência de Dados em R - Capítulo 4 - Pacotes](https://livro.curso-r.com/4-pacotes.html)                                                            |
+|    2 | Comunidades | [R Brasil - Telegram](https://t.me/rbrasiloficial)                                                                                                        |
+|    2 | Comunidades | [RLadies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil)                                                                                           |
+|    2 | Extra       | [R Inferno: tudo o que pode dar errado com o R](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)                                                     |
 
 ## Redes sociais da Curso-R
 
