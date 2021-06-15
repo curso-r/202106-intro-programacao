@@ -23,6 +23,14 @@
 
 
 install.packages("readr")
+install.packages("dplyr")
+
+install.packages("remotes") # instalou o remotes
+library(remotes) # carregou o remotes
+install_github("curso-r/CursoRTarefas") # usou uma funcao do remotes
+
+remotes::install_github("curso-r/CursoRTarefas")
+
 
 # para que todas as funções de leitura de dados fiquem disponíveis para você, 
 # você usa a função "library". Neste caso, funciona com ou sem aspas!
@@ -76,6 +84,10 @@ getwd()
 # Caminhos relativos: são relativos ao  diretório de trabalho atual, partem dele.
 "dados/imdb.csv"
 
+"dados/voos_de_abril.csv"
+
+
+
 # (cara(o) professora(o), favor lembrar de falar da dica 
 # de navegação entre as aspas e a tecla tab)
 
@@ -86,17 +98,22 @@ getwd()
 # que esteja salva com a extensão ".csv", 
 # você pode utilizar a função read_csv2() :
 
+library(readr)
 base_de_dados <- read_csv2("dados/voos_de_janeiro.csv")
 
 ## Exercício! ------------
 # Carregue a base de dados correspondente aos voos de fevereiro, 
 # e guarde em um objeto chamado 'base_de_dados_fev'
 
+base_de_dados_fev <- read_csv2("dados/voos_de_fevereiro.csv")
+
+dplyr::glimpse(base_de_dados_fev)
 
 
+base_de_dados_fev_ponto <- read.csv2("dados/voos_de_fevereiro.csv")
 
-
-
+# como apagar um objeto?
+rm(base_de_dados_fev_ponto)
 
 
 # Bases no R - o que é um data.frame? -------
@@ -131,10 +148,10 @@ dim(base_de_dados)
 
 
 # Primeiras 6 linhas de uma tabela
-head(base_de_dados)
+head(base_de_dados, n = 10)
 
 # Últimas 6 linhas de uma tabela
-tail(base_de_dados)
+tail(base_de_dados, n = 6)
 
 # Retorna algumas informações sobre a base
 
@@ -142,14 +159,21 @@ summary(base_de_dados)
 
 str(base_de_dados)
 
+# falar do glimpse
+library(dplyr)
+glimpse(base_de_dados)
+
 ## Exercícios! ------------
 # Use as funções que apresentamos agora para descobrir:
 
 # a) Quantos voos a base que carregamos referente à fevereiro
 # (base_de_dados_fev) apresenta? (Dica: cada voo é apresentado em uma linha)
 
+nrow(base_de_dados_fev)
 
 # b) Qual é a dimensão do data.frame base_de_dados_fev? E o que significa?
+
+dim(base_de_dados_fev)
 
 # Operadores de seleção de data.frames -------
 
@@ -161,6 +185,10 @@ base_de_dados$origem
 
 base_de_dados$companhia_aerea
 
+base_de_dados$dia
+
+lista_companhia <- base_de_dados$companhia_aerea
+
 # Dica: use o tab do teclado para usar a funcionalidade de autocompletar.
 
 ## Selecionando elementos em um data.frame com o [ ] -------
@@ -171,10 +199,12 @@ base_de_dados$companhia_aerea
 # Selecionando a coluna pelo nome:
 base_de_dados[["origem"]]
 base_de_dados[["companhia_aerea"]]
+# equivalente a base_de_dados$companhia_aerea
 
 # Selecionando a coluna pela posição (indexação):
 base_de_dados[[13]]
 base_de_dados[[10]]
+mean(base_de_dados[6], na.rm = TRUE)
 
 # Selecionando usando a função "select" do pacote "dplyr"
 
@@ -184,6 +214,8 @@ library(dplyr)
 
 select(base_de_dados, origem)
 select(base_de_dados, companhia_aerea)
+select(base_de_dados, origem, destino)
+select(base_de_dados, tempo_voo:hora)
 
 # A classe data frame tem uma característica especial: dimensão
 
@@ -202,6 +234,7 @@ base_de_dados[1, 2]
 
 # Seleciona a linha 1 e TODAS as colunas
 base_de_dados[1, ] 
+# base_de_dados[1 ] é diferente
 
 # Seleciona TODAS as linhas e apenas a coluna 2
 base_de_dados[ , 2] 
@@ -209,9 +242,12 @@ base_de_dados[ , 2]
 
 # Selecionando colunas
 
-base_de_dados[, c(13, 10)]
-base_de_dados[, c("origem", "companhia_aerea")]
+base_de_dados[  , c(13, 10)]
+base_de_dados[  , c(10:13)]
+base_de_dados[  , c("origem", "companhia_aerea")]
 
+# Linhas e colunas
+base_de_dados[1:10, 1:5]
 
 
 # Exercício ---
@@ -219,6 +255,20 @@ base_de_dados[, c("origem", "companhia_aerea")]
 # a) Considerando os meses de Janeiro e Fevereiro, em qual mês a distância
 # total voada foi maior?
 
+sum(base_de_dados$distancia)
+
+dist_jan <- sum(base_de_dados$distancia)
+dist_fev <- sum(base_de_dados_fev$distancia)
+
+dist_jan
+dist_fev
+
+dist_jan <- base_de_dados[["distancia"]]
+dist_fev <- base_de_dados_fev[["distancia"]]
+sum(dist_jan)
+sum(dist_fev)
+
+glimpse(base_de_dados)
 
 
 
@@ -281,6 +331,7 @@ nascimento_data_br <- as.Date(nascimento_texto_br, format = "%d-%m-%Y")
 
 class(nascimento_data_br)
 
+nascimento_data_br
 
 # Função Sys.Date() informa a data de hoje
 
@@ -289,7 +340,7 @@ Sys.Date()
 # Podemos fazer operações matemáticas com datas
 
 dias_desde_o_nascimento <- Sys.Date() - nascimento_data_br
-
+dias_desde_o_nascimento
 
 # Função Sys.time() informa a data e hora de hoje, 
 # além do fuso horário utilizado
@@ -315,7 +366,7 @@ motores <- c(2, 2, 2)
 assentos <- c(55, 182, 182)
 
 amostra_avioes <- data.frame(codigo_cauda, ano, motores, assentos)
-
+amostra_avioes
 
 
 

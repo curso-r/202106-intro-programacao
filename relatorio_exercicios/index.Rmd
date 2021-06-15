@@ -14,7 +14,7 @@ output:
 knit: pagedown::chrome_print
 params: 
   turma: "202106-intro-programacao"
-  tamanho_sala: 50
+  tamanho_sala: 51
   url_sheet: "https://docs.google.com/spreadsheets/d/1KJfBhGED5fCw23VXhO8fx8jGPHh5bm9XTFaiZMsx_A8/edit?resourcekey#gid=908034618"
 ---
 
@@ -38,7 +38,7 @@ df <- df_sheet %>%
 # quantas pessoas responderam o form?
 n_respondentes <- nrow(df)
 
-porcentagem_sala_respondeu <- n_respondentes/ params$tamanho_sala * 100
+porcentagem_sala_respondeu <- round(n_respondentes/ params$tamanho_sala * 100, 1)
 ```
 
 Porcentagem de pessoas da sala que responderam a tarefa: `r porcentagem_sala_respondeu`%.
@@ -107,7 +107,9 @@ purrr::walk(.x = id_questoes, .f = colar_questoes)
 
 ### Exercícios  {.unnumbered}
 
-```{r}
+Ocultado :) 
+
+```{r eval=FALSE, include=FALSE}
 # extrair resposta para exercicios
 respostas_exercicios <-
   learnrhash::extract_exercises(df, "hash") %>%

@@ -43,6 +43,27 @@ e descompacte dentro da pasta do projeto.
 | numero | script          | link                                                                                  |
 |-------:|:----------------|:--------------------------------------------------------------------------------------|
 |      1 | 01-introducao.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/01-introducao.R> |
+|      2 | 02-tabelas.R    | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/02-tabelas.R>    |
+
+## Dados utilizados
+
+Os dados são derivados da base `voos` disponível no pacote
+[dados](https://cienciadedatos.github.io/dados/).
+
+| arquivo                 | link                                                                             |
+|:------------------------|:---------------------------------------------------------------------------------|
+| voos\_de\_abril.csv     | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_abril.csv>     |
+| voos\_de\_agosto.csv    | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_agosto.csv>    |
+| voos\_de\_dezembro.csv  | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_dezembro.csv>  |
+| voos\_de\_fevereiro.csv | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_fevereiro.csv> |
+| voos\_de\_janeiro.csv   | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_janeiro.csv>   |
+| voos\_de\_julho.csv     | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_julho.csv>     |
+| voos\_de\_junho.csv     | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_junho.csv>     |
+| voos\_de\_maio.csv      | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_maio.csv>      |
+| voos\_de\_marco.csv     | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_marco.csv>     |
+| voos\_de\_novembro.csv  | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_novembro.csv>  |
+| voos\_de\_outubro.csv   | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_outubro.csv>   |
+| voos\_de\_setembro.csv  | <https://curso-r.github.io/202106-intro-programacao/dados/voos_de_setembro.csv>  |
 
 ## Materiais complementares
 
