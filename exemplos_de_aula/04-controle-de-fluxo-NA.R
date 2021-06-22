@@ -253,3 +253,23 @@ media_atraso_aeroporto_referencia <- mean(aeroporto_referencia$atraso_saida, na.
 library(readr)
 
 write_csv2(base_de_dados, "exportacao.csv")
+
+origem_referencia <- "JFK"
+
+if(origem_referencia == "EWR"){
+  
+  base_de_dados_de_referencia <- filter(base_de_dados, origem == origem_referencia)
+  
+  media_de_referencia <- mean(base_de_dados_de_referencia$atraso_saida, na.rm = TRUE)
+  
+  print(paste0("A média de atraso no aeroporto de Newark é ", media_de_referencia))
+  
+} else if (origem_referencia == "JFK"){
+  
+  base_de_dados_de_referencia <- filter(base_de_dados, origem == origem_referencia, 
+                                        dia == 17)
+  
+  media_de_referencia <- mean(base_de_dados_de_referencia$atraso_saida, na.rm = TRUE)
+  
+  print(paste0("A média de atraso no aeroporto JFK no dia 17 é ", media_de_referencia))
+}
