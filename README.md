@@ -44,6 +44,7 @@ e descompacte dentro da pasta do projeto.
 |-------:|:----------------|:--------------------------------------------------------------------------------------|
 |      1 | 01-introducao.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/01-introducao.R> |
 |      2 | 02-tabelas.R    | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/02-tabelas.R>    |
+|      3 | 03-filtros.R    | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/03-filtros.R>    |
 
 ## Dados utilizados
 
@@ -92,6 +93,7 @@ Os dados são derivados da base `voos` disponível no pacote
 |    2 | Comunidades | [R Brasil - Telegram](https://t.me/rbrasiloficial)                                                                                                        |
 |    2 | Comunidades | [RLadies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil)                                                                                           |
 |    2 | Extra       | [R Inferno: tudo o que pode dar errado com o R](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)                                                     |
+|    3 | Dúvidas     | [Exemplo de Dashboard](http://estatisticas.forumseguranca.org.br/)                                                                                        |
 
 ## Redes sociais da Curso-R
 
