@@ -32,7 +32,7 @@ for (i in 1:10) {
 
 # a AÇÃO sempre deve se aplicar a um elemento nosso contexto. vamos a mais elementos de ACAO, sem mudar o contexto:
 
-for (i in 1:10) {
+for (i in 1:100) {
   # escopo: números de 1 a 10, representados pela letra "i"
   
   # DAQUI PRA BAIXO VEM A AÇÃO:
@@ -47,6 +47,14 @@ for (i in 1:10) {
   # terminamos igual fizemos na última vez: imprimindo algo no console
   
 }
+
+quadrado_de_i <- 1^2
+print(quadrado_de_i)
+
+quadrado_de_i <- 2^2
+print(quadrado_de_i)
+
+
 
 # outro exemplo de ação
 

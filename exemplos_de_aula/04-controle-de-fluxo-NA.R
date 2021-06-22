@@ -22,21 +22,23 @@ base_de_dados <- read_csv2("dados/voos_de_janeiro.csv")
 
 x <- 1
 
-if(x == 1) {         
+if(x == 2) {         
   Sys.time()    
 }
 
 # if/else: faz uma ação se as condições anteriores não forem atendidas.
 
-x <- 1
+x <- -1
 
 if(x < 0){
-  "negativo"
+  print("negativo")
 } else {
-  "não negativo"
+  print("não negativo")
 }
 
 # else-if: generaliza o comportamento do if
+
+x <- 0
 
 if(x < 0) {
   "negativo"
@@ -51,18 +53,19 @@ if(x < 0) {
 hoje <- Sys.Date()
 carnaval <- as.Date("2021-02-16")
 
+dias_para_carnaval <- as.numeric(carnaval - hoje) 
+
 if(hoje < carnaval){
   
-  dias_para_carnaval <- as.numeric(carnaval - hoje) 
   paste("Faltam", dias_para_carnaval, "dias para o carnaval!")
   
-}  else if(hoje == carnaval){
+} else if(hoje == carnaval){
   
-  paste("Hoje é carnaval!")
+  "Hoje é carnaval!"
   
 } else {
   
-  paste("O carnaval de 2021 já passou... agora só ano que vem!")
+  "O carnaval de 2021 já passou... agora só ano que vem!"
   
 }
 
@@ -77,19 +80,20 @@ if(hoje < carnaval){
 # e recuperação se tiver nota maior que 3 e menor que 5.
 
 
-nota <- 5 
+nota <- 10
 
 if(nota >= 5){
   
-  print("....")
+  print("Parabéns! Você passou!")
   
-} else if(....) {
+} else if(nota < 3) {
   
   print("Reprovada")
   
 } else {
+  # 3 <= nota < 5
   
-  print("...")
+  print("Que pena, mas ainda dá tempo de recuperar. A prova de recuperação é no dia X/Y")
 }
 
 # 2. Continuando o exercício anterior: 
@@ -97,7 +101,11 @@ if(nota >= 5){
 # O que o código retorna é coerente com a nota que você passou?
 
 
-
+1
+3
+5
+6
+10
 
 
 # Voltando a falar sobre tabelas!  ------------------------------------
@@ -107,7 +115,6 @@ if(nota >= 5){
 base_de_dados_fev <- read_csv2("dados/voos_de_fevereiro.csv")
 
 head(base_de_dados_fev)
-
 
 # Queremos juntar as bases com dados de janeiro em fevereiro, e uma única base.
 # a base contém as mesmas colunas!
@@ -120,7 +127,6 @@ base_jan_fev <- rbind(base_de_dados, base_de_dados_fev)
 
 nome_mes <- "janeiro"
 cbind(base_de_dados, nome_mes)
-
 
 # Valores especiais -------------------------------------------------------
 
@@ -155,9 +161,22 @@ idade_beto == idade_carla
 x <- NA
 is.na(x)
 
-0 / 0 == NaN
+0/0
+log(-1)
+
+0/0 == NaN
 is.nan(0 / 0)
 
+2^(9999999999999999999999999999999)
+
+1/Inf
+
+idades + 1
+idades - 1
+
+mean(idades)
+
+mean(idades, na.rm = TRUE)
 
 idades <- c(15, 64, 31, NA, 59)
 is.na(idades)
@@ -165,7 +184,6 @@ is.na(idades)
 is.nan(NaN)
 is.infinite(10 ^ 309)
 is.null(NULL)
-
 
 # Dataframes e funções ------------
 
@@ -184,6 +202,7 @@ sum(is.na(base_de_dados$atraso_chegada)) # Quantos NA tem na coluna?
 # Assim somaremos quantos NA tem na coluna,
 # pois cada TRUE (presença de NA) será contabilizado como 1.
 
+mean(is.na(base_de_dados$atraso_chegada))
 
 # ... e se quisermos ignorar o NA? 
 # Algumas funções possuem um argumento para remover os NA:
@@ -214,3 +233,23 @@ sd(base_de_dados$atraso_chegada, na.rm = TRUE)
 # Exercícios ------------------------------------------
 # 1. Calcule o valor mínimo e valor máximo da coluna "atraso_saida". O que 
 # esses valores significam?
+
+max(base_de_dados$atraso_saida, na.rm = TRUE)
+min(base_de_dados$atraso_saida, na.rm = TRUE)
+
+base_de_dados$origem
+
+
+# exemplo
+
+library(dplyr)
+
+origem_referencia <- "EWR"
+
+aeroporto_referencia <- filter(base_de_dados, origem == origem_referencia)
+
+media_atraso_aeroporto_referencia <- mean(aeroporto_referencia$atraso_saida, na.rm = TRUE) 
+
+library(readr)
+
+write_csv2(base_de_dados, "exportacao.csv")
