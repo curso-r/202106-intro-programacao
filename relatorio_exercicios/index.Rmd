@@ -33,8 +33,8 @@ tarefas <-
                  id = as.character()) %>%
   tibble::add_row(numero = 1, nome = "Introdução",  id = "1-introducao") %>%
   tibble::add_row(numero = 2, nome = "Tabelas",  id = "2-tabelas") %>%
-  tibble::add_row(numero = 3, nome = "Filtros",  id = "3-filtros") #%>%
-# tibble::add_row(numero = 4, nome = "Controle de fluxo",  id = "4-loops") %>%
+  tibble::add_row(numero = 3, nome = "Filtros",  id = "3-filtros") %>%
+ tibble::add_row(numero = 4, nome = "Controle de fluxo",  id = "4-loops") #%>%
 # tibble::add_row(numero = 5, nome = "Funções",  id = "5-funcoes") %>%
 # tibble::add_row(numero = 6, nome = "Pipe",  id = "6-pipe")
 
@@ -53,8 +53,11 @@ tabela <- tabela_raw %>%
   janitor::clean_names() %>%
   dplyr::rename("email" = 2,
                 "nome" = 3,
-                "hash" = 4) %>%
-  dplyr::filter(!stringr::str_detect(email, "@curso-r.com"))
+                "hash" = 4,
+                "hash2" = 6) %>%
+    tidyr::unite("hash", c(hash, hash2)) %>% 
+  dplyr::filter(!stringr::str_detect(email, "@curso-r.com")) %>% 
+  dplyr::mutate(hash = stringr::str_remove(hash, "^NA_"))
 
 
 tabela %>% dplyr::count(id_tarefa) %>%
@@ -115,8 +118,8 @@ for (i in 1:nrow(tarefas)) {
     
     print(
       glue::glue(
-        "**ID da questão:** {unique(questao$question_id)} \n
-**Questão:** {unique(questao$question_text)} \n"
+        "**ID da questão:** {unique(questao$question_id)} \n"
+# **Questão:** {unique(questao$question_text)} \n"
       )
     )
     
@@ -144,6 +147,7 @@ for (i in 1:nrow(tarefas)) {
   # porcentagem de questoes corretas
   
   qnt_respostas <- respostas_exercicios %>%
+    dplyr::filter(!stringr::str_detect(exercise_id, "-exemplo")) %>% 
     dplyr::group_by(exercise_id) %>%
     dplyr::summarise(
       numero_respostas = dplyr::n(),
