@@ -47,6 +47,7 @@ e descompacte dentro da pasta do projeto.
 |      3 | 03-filtros.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/03-filtros.R>              |
 |      4 | 04-controle-de-fluxo-NA.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/04-controle-de-fluxo-NA.R> |
 |      5 | 05-loops.R                | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/05-loops.R>                |
+|      6 | 06-loops-2.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/06-loops-2.R>              |
 
 ## Dados utilizados
 
@@ -76,8 +77,6 @@ Os dados são derivados da base `voos` disponível no pacote
 |    0 | Instalação  | [Instalação do RStudio](https://livro.curso-r.com/1-2-instalacao-do-rstudio.html)                                                                         |
 |    0 | Comunidades | [Redes sociais dos capítulos da R-Ladies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil/blob/master/README.md)                                     |
 |    1 | Curso-R     | [Materiais da Curso-R](https://curso-r.com/material/)                                                                                                     |
-|    1 | Curso-R     | [Trabalhos finais do curso passado](https://curso-r.github.io/202102-intro-programacao/)                                                                  |
-|    1 | Introdução  | [Post sobre erros](https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/)                                                                          |
 |    1 | Introdução  | [Exemplo de Dashboard](https://coronavirus.jhu.edu/map.html)                                                                                              |
 |    1 | Introdução  | [R Foundation](https://www.r-project.org/foundation/)                                                                                                     |
 |    1 | Introdução  | [Live sobre o projeto base dos dados](https://www.youtube.com/watch?v=8D4jK-YCxLU&t=3733s)                                                                |
@@ -96,6 +95,8 @@ Os dados são derivados da base `voos` disponível no pacote
 |    2 | Comunidades | [RLadies](https://github.com/R-Ladies-Sao-Paulo/RLadies-Brasil)                                                                                           |
 |    2 | Extra       | [R Inferno: tudo o que pode dar errado com o R](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)                                                     |
 |    3 | Dúvidas     | [Exemplo de Dashboard](http://estatisticas.forumseguranca.org.br/)                                                                                        |
+|    6 | Curso-R     | [Trabalhos finais do curso passado](https://curso-r.github.io/202102-intro-programacao/)                                                                  |
+|    6 | Introdução  | [Post sobre erros](https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/)                                                                          |
 
 ## Redes sociais da Curso-R
 
