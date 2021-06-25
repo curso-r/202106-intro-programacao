@@ -40,11 +40,13 @@ e descompacte dentro da pasta do projeto.
 
 ## Scripts usados em aula
 
-| numero | script          | link                                                                                  |
-|-------:|:----------------|:--------------------------------------------------------------------------------------|
-|      1 | 01-introducao.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/01-introducao.R> |
-|      2 | 02-tabelas.R    | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/02-tabelas.R>    |
-|      3 | 03-filtros.R    | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/03-filtros.R>    |
+| numero | script                    | link                                                                                            |
+|-------:|:--------------------------|:------------------------------------------------------------------------------------------------|
+|      1 | 01-introducao.R           | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/01-introducao.R>           |
+|      2 | 02-tabelas.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/02-tabelas.R>              |
+|      3 | 03-filtros.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/03-filtros.R>              |
+|      4 | 04-controle-de-fluxo-NA.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/04-controle-de-fluxo-NA.R> |
+|      5 | 05-loops.R                | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/05-loops.R>                |
 
 ## Dados utilizados
 
