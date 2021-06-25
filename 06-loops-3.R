@@ -8,8 +8,8 @@ library(dplyr)
 
 # Lista de arquivos -------------------------------------------------------
 
-arquivos <- c("dados/voos_de_janeiro.csv", "dados/voos_de_fevereiro.csv", "dados/voos_de_marco.csv",
-              "dados/voos_de_abril.csv", "dados/voos_de_maio.csv", "dados/voos_de_junho.csv")
+arquivos <- c("dados/voos_de_janeiro.csv", "dados/voos_de_fevereiro.csv",
+              "dados/voos_de_marco.csv")
 
 
 # Resultados - Loop -------------------------------------------------------
