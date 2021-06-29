@@ -22,7 +22,8 @@ c(1, 3, 5)
 
 # Geralmente os argumentos relativos aos dados são os primeiros. 
 
-
+# exemplo
+# filter(base_de_dados, coluna > 5)
 
 # Alguns argumentos tem valores por padrão, que costumam ser os valores mais
 # comuns a serem utilizados.
@@ -37,12 +38,11 @@ c(1, 3, 5)
 # utilizando o argumento digits, o valor padrão utilizado será 0, e o
 # número será arredondado para não ter nenhuma casa decimal.
 
-round(10.555) # argumento digits não informado, usará valor padrão 0
+round(10.555)  # argumento digits não informado, usará valor padrão 0
 
 round(10.555, 1) # argumento digits informado, usará 1 casa decimal
 
 round(10.555, 2) # argumento digits informado, usará 2 casas decimais
-
 
 
 # Caso você não nomeie os argumentos, a ordem deles será  importante! 
@@ -102,7 +102,17 @@ calculo_imc <- function(peso, altura){
 }
 
 # Agora que a função está criada, podemos testar com diferentes pesos e alturas!
-calculo_imc(peso = 65, altura = 1.75)
+calculo_imc(peso = 60, altura = 1.70)
+
+calculo_imc_2 <- function(peso, altura, casas_arredondar = 2){
+  imc <- peso/ (altura^2)
+  round(imc, casas_arredondar)      # podemos usar a função  round para arredondar o resultado
+}
+
+# Agora que a função está criada, podemos testar com diferentes pesos e alturas!
+calculo_imc_2(peso = 60, altura = 1.70)
+
+calculo_imc_2(60, 1.70, 3)
 
 
 # Função source ------------------------------------------------------
