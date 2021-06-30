@@ -48,6 +48,12 @@ e descompacte dentro da pasta do projeto.
 |      4 | 04-controle-de-fluxo-NA.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/04-controle-de-fluxo-NA.R> |
 |      5 | 05-loops.R                | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/05-loops.R>                |
 |      6 | 06-loops-2.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/06-loops-2.R>              |
+|      7 | 07-funcoes.R              | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/07-funcoes.R>              |
+|      8 | 08-pipe.R                 | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/08-pipe.R>                 |
+|      9 | 09-instalar-pacotes.R     | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/09-instalar-pacotes.R>     |
+|     10 | 10-manipulacao-arquivos.R | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/10-manipulacao-arquivos.R> |
+|     11 | 11-exemplo-source.R       | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/11-exemplo-source.R>       |
+|     12 | 12-funcoes-extra.R        | <https://curso-r.github.io/202106-intro-programacao/exemplos_de_aula/12-funcoes-extra.R>        |
 
 ## Dados utilizados
 
@@ -97,6 +103,10 @@ Os dados são derivados da base `voos` disponível no pacote
 |    3 | Dúvidas     | [Exemplo de Dashboard](http://estatisticas.forumseguranca.org.br/)                                                                                        |
 |    6 | Curso-R     | [Trabalhos finais do curso passado](https://curso-r.github.io/202102-intro-programacao/)                                                                  |
 |    6 | Introdução  | [Post sobre erros](https://blog.curso-r.com/posts/2021-03-29-desvendando-erros/)                                                                          |
+|    7 | Pipe        | [Livro Ciência de Dados em R - Capítulo 6 - Pipe](https://livro.curso-r.com/6-pipe.html)                                                                  |
+|    7 | Extra       | [Post sobre o R 4.1](https://blog.curso-r.com/posts/2021-05-06-o-novo-pipe-esta-chegando/)                                                                |
+|    7 | Extra       | [Live de lançamento do R 4.1](https://www.youtube.com/watch?v=RPSLFU_5OGk&t=3225s)                                                                        |
+|    7 | Extra       | [Manifesto tidy](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html)                                                              |
 
 ## Redes sociais da Curso-R
 

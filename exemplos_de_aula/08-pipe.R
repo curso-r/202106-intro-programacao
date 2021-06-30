@@ -23,6 +23,7 @@ x %>% f(x) %>% g(x) # ERRADO
 # Receita de bolo sem pipe. 
 # Tente entender o que é preciso fazer.
 
+
 esfrie(
   asse(
     coloque(
@@ -57,8 +58,9 @@ recipiente(rep("farinha", 2), "água", "fermento", "leite", "óleo") %>%
   asse(duração = "50min") %>%
   esfrie("geladeira", "20min")
 
-# ATALHO DO %>%: CTRL (command) + SHIFT + M
+# ATALHO DO %>%: CTRL (command) + SHIFT + M  
 
+# versão 4.1   novo pipe  |>
 
 # Exercício ---------------------------------------------------------------
 
@@ -69,5 +71,31 @@ recipiente(rep("farinha", 2), "água", "fermento", "leite", "óleo") %>%
 round(mean(base_de_dados$atraso_chegada, na.rm = TRUE), 2)
 
 
+# resolucao 
+mean(base_de_dados$atraso_chegada, na.rm = TRUE) %>% 
+  round(digits = 2)
 
 
+# OUTRA forma
+base_de_dados$atraso_chegada %>% 
+  mean(na.rm = TRUE) %>% 
+  round(digits = 2)
+
+
+# exemplo usando o script 03-filtros
+library(dplyr)
+
+# com base R
+nova_base_de_dados <- filter(base_de_dados, origem == "EWR")
+select(nova_base_de_dados, ano, mes, dia, origem)
+
+
+# com pipe
+
+voos_ewr <- base_de_dados %>% 
+  filter(origem == "EWR") %>% 
+  select(ano, mes, dia, origem)
+  
+
+# contar quantos voos tem por dia, usando a base filtrada:
+voos_ewr %>% count(dia) %>% View()
