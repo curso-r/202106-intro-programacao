@@ -25,6 +25,13 @@ Certifique que você está dentro do projeto criado no passo 1 e baixe
 arquivo](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip)
 e descompacte dentro da pasta do projeto.
 
+## Trabalhos finais premiados
+
+| script               | link                                                                                                |
+|:---------------------|:----------------------------------------------------------------------------------------------------|
+| Amanda\_Mendes.zip   | <https://github.com/curso-r/202106-intro-programacao/raw/main/trabalhos_finais/Amanda_Mendes.zip>   |
+
+
 ## Slides
 
 | slide                                    | link                                                                                        |
@@ -107,6 +114,7 @@ Os dados são derivados da base `voos` disponível no pacote
 |    7 | Extra       | [Post sobre o R 4.1](https://blog.curso-r.com/posts/2021-05-06-o-novo-pipe-esta-chegando/)                                                                |
 |    7 | Extra       | [Live de lançamento do R 4.1](https://www.youtube.com/watch?v=RPSLFU_5OGk&t=3225s)                                                                        |
 |    7 | Extra       | [Manifesto tidy](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html)                                                              |
+|    7 | Extra       | [Alfred - Project Workflow no MacOS](https://www.youtube.com/watch?v=boKFxBniUH0)                                                                         |
 
 ## Redes sociais da Curso-R
 

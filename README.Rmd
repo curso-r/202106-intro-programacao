@@ -36,6 +36,24 @@ Faça um projeto do RStudio para usar durante todo o curso e em seguida abra-o.
 
 Certifique que você está dentro do projeto criado no passo 1 e baixe [este arquivo](https://github.com/curso-r/main-intro-programacao/raw/master/material_do_curso.zip) e descompacte dentro da pasta do projeto.
 
+## Trabalhos finais premiados
+
+```{r echo=FALSE}
+nome_pasta <- "trabalhos_finais"
+tibble::tibble(
+  script = list.files(nome_pasta, recursive = FALSE),
+  link = paste0(
+    "https://github.com/curso-r/",
+    turma,
+    "/raw/main/",
+    nome_pasta, "/",
+    script
+  )
+) %>% 
+  knitr::kable()
+
+
+```
 
 ## Slides
 
